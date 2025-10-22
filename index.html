@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/css.css">
 </head>
+
 <body>
-    
+    <h1>Página de Estudos</h1>
+    <form method="get" action="envio_dados.php">
+        <!-- para adicionar nome -->
+        <input type="text" name="nome" placeholder="digite o seu nome">
+        <br>
+        <!-- para adicionar email -->
+        <input type="email" name="email" placeholder="digite seu email">
+        <br>
+        <!-- para adicionar um botao de enviar -->
+        <input type="submit" name="enviar" placeholder="enviar" class="enviar">
+
+    </form>
+    <!-- para adicionar botão -->
+    <form>
+        <input type="botao" value="Clique Aqui" onclick="msg()">
+    </form>
+
+
+    <form>
+        <!-- para adicionar a caixa de seleção -->
+        <input type="checkbox" name="veiculo 1" value="bicicleta">
+        eu tenho uma bicicleta<br>
+        <input type="checkbox" name="veiculo 2" value="carro">
+        eu tenho um carro<br>
+        <input type="checkbox" name="veiculo 3" value="moto">
+        eu tenho uma moto<br>
+    </form>
+    <!-- para selecionar cor -->
+    <form>
+        selecione sua cor favorita: <input type="color" name="favcor" value="#000000">
+
+    </form>
+    <!-- para selecionar data -->
+    <form>
+        <input type="date" name="nascimento">
+    </form>
+    <!-- para selecionar data e hora-->
+    <form>
+        Data de Nascimento: <input type="datetime-local" name="bdaytime">
+    </form>
+    <!-- Para permitir a seleção de 1 arquivo -->
+    <form>
+        <input type="file" name="arquivos">
+    </form>
+    <br><br><br>
+    <!-- Para permitir a seleção de multiplos arquivos -->
+    <form>
+        <input type="file" name="arquivos" multiple>
+    </form>
+    <form>
+        Quantidade entre 1 e 5: <input type="number" name="qtd" min="1" max="5">
+    </form>
+
+    <form>
+        <input type="password" value="senha" name="senha">
+    </form>
+    <form>
+        <input type="radio" name="idade" value="18_22">18 a 22<br>
+        <input type="radio" name="idade" value="23_30">23 a 30<br>
+        <input type="radio" name="idade" value="mais31">mais de 31<br>
+    </form>
+
+    <form>
+        defina seu nivel de satisfação:<br>
+        pouco satisfeito
+        <input type="range" name="satisfacao" min="0" max="10">
+        muito satisfeito
+    </form>
+    <form>
+        <label for="email">Digite o seu email</label>
+        <input id="email" type="email" name="email"><br><br>
+        <label for="pin">Digite seu código</label>
+        <input type="text" id="pin" name="name" maxlength="4"><br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+    <form>
+        pesquisar: <input type="search" name="q">
+    </form>
+    <form>
+        <input type="submit" value="Enviar Formulário">
+    </form>
+
+    <form>
+        Telefone: <input type="tel" name="usetel">
+    </form>
+    <form>
+        Link do seu Website: <input type="url" name="webpage">
+    </form>
+    <form>
+        <textarea></textarea>
+        <br>
+        <textarea>Area de texto com um texto inicial dentro</textarea>
+    </form>
+    <select name="lista" id="lista">
+        <option>selecione uma opção</option>
+        <option>Macarrão</option>
+        <option>Pizza</option>
+        <option>Nhoque</option>
+        <option>Canelone</option>
+    </select>
+    <fieldset>
+        <legend>Formulário</legend>
+    </fieldset>
+    <script>
+        function msg() {
+            alert("Voce clicou no botao")
+        }
+    </script>
 </body>
+
 </html>
