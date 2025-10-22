@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provas</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários em Html</h1>
+    <h2>Exemplo 01</h2>
+    <form>
+        <input type="text" name="nome" placeholder="Digite o seu nome">
+        <input type="email" name="email" placeholder="Digite o seu email">
+        <input type="date" name="data">
+        <input type="tel" name="telefone" placeholder="celular">
+        <input type="password" name="senha" placeholder="senha">
+        <input type="button" name="enviar" value="cadastrar">
+    </form>
+    <h2>Exemplo 02</h2>
+    <form>
+        <textarea rows="4" cols="50">
+            "Texto 1"
+        </textarea>
+    </form>
+    <h2>Exemplo 03</h2>
+    <form>
+    <fieldset>
+        <legend>Formulários</legend>
+        <form>
+            <label for="name">Nome: </label>
+            <input type="text">
+            <br><br>
+            <label for="sexo">Sexo: </label>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">Masculino</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="female">Feminino</label>
+            <br><br>
+            <label for="pais">País</label>
+            <select name="pais" id="pais">
+                <option>Qual o seu País?</option>
+                <option>Brasil</option>
+                <option>Argentina</option>
+                <option>Coreia do Norte</option>
+                <option>Japão</option>
+            </select>
+            <br><br>
+            <label for="mensagem">Mensagem:</label>
+            <br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="4"></textarea><br><br>
+            <input type="checkbox" name="checkbox"> 
+            <label for="checkbox"> Newsletter? </label><br><br>
+            <input type="submit" value="Enviar">
+
+
+        </form>
+    </fieldset>
+    </form>
+    <h2>Exemplo 04</h2>
+    <form method="get" action="https://www.google.com/search" target="_blank"> 
+        <input type="search" name="q" placeholder="pesquisar">
+        <input type="submit" value="clique para pesquisar">
+    </form>
+</body>
+</html>
