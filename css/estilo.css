@@ -1,0 +1,60 @@
+body{
+    text-align: center;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr{
+   height: 20px;
+   background-color: black;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+#vida{
+    color: salmon;
+    font-size: 36px;
+    font-weight: bold;
+}
+#excores{
+    font-size: 35px ;
+}
+#coresfundo{
+    background-color: lightskyblue;
+    font-size: large;
+    font-weight: bold;
+    
+}
+#fonterosa{
+    color: #fdb1fa;
+    font-size: 15px;
+     font-weight: 400;
+}
+#bordacor{
+    border: solid olive 2px;
+    font-size: 32px;
+}
+#formatacoes{
+    font-size: 32px;
+    text-decoration: underline;
+    color: seagreen;
+    border: solid 2px olive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#exemplo{
+    font-size: 72px;
+    color: tomato;
+    border: solid 2px olive;
+    text-decoration: underline;
+    background-color: slateblue;
+    font-weight: bolder;
+    font-style: italic;
+}
