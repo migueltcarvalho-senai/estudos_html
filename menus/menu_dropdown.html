@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuDropDown</title>
+    <style>
+        .dropbtn{
+            background-color: #4caf50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border:none;
+            cursor: pointer;
+        }
+        .dropdown{
+            position: relative;
+            /* o elemento continua ocupando o mesmo espaço mas pode ser movido com top, left, right, bottom */
+            position: relativo;
+            display: inline-block
+        }
+        .dropdown-conteudo{
+            /* menu fica primordialmente invisivel */
+            display: none;
+            /* fica absoluto em relação ao elemento pai relative */
+            position: absolute;
+            background-color: #f9f9f9;
+            /* define a largura minima do menu para deixa-lo alinhado com todas as opções */
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Meny DropDown SESI</h2>
+    <p>Mova o mouse até o botão para abrir o menu DropDown</p>
+    <div class="dropdown">
+        <button class="dropbtn">DropDown</button>
+        <div class="dropdown-conteudo">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+    
+</body>
+</html>
