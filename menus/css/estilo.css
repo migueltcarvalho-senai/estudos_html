@@ -20,20 +20,81 @@ h4{
     padding: 5px;
 }
 /* menu horizontal */
+/*<ul> do menu */
 #menu ul{
     padding: 10px;
     margin: 0px;
     background-color: #2b1010;
     list-style: none;
 
-
 }
-
+/* pegar a tag <li> do <ul> do menu */
 #menu ul li {
     display: inline;
 }
 
+/* pegar a tag <a> do <li> do <ul> do menu */
+
 #menu ul li a {
+    /* margem interna */
     padding: 10px 30px;
+    /* tirar o underline do link */
     text-decoration: none;
+    background-color: #ededed;
+    display: inline-block;
+    border-bottom: 3px solid #ededed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 0 50px;
+    transition: 0.25s;
+}
+/* animação ao mexer o mouse */
+#menu ul li a:hover{
+    background-color: #b5d45d;
+    color: #2d19e2;
+    border-bottom: 3px solid #ea0000;
+    transition: 0.25s;
+    transform
+    : scale(1.25);
+}
+/* menu vertical */
+
+/* pegar a ul dentro do menuv */
+#menuv ul{
+    /* remover marcadores */
+    list-style-type: none;
+    margin-left: 0;
+    /* padding do ul */
+    padding: 20px 50px;
+    /* aumenta a largura para alinhar */
+    width: 150px ;
+    /* cor do fundo da ul */
+    background-color: #2b1010;
+
+}
+
+/* pegar a <a> do <li> do <ul> do menu */
+#menuv ul li a{
+    /* transforma os <a> em blocks */
+    display: block;
+    padding: 10px 40px;
+    background-color: #ededed;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 3px solid #ededed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+#menuv ul li a:hover{
+    background-color: #b5d45d;
+    color: #2d19e2;
+    border-bottom: 3px solid #ea0000;
+    transition: 0.25s;
+    transform
+    : scale(1.25);
 }
